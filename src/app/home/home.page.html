@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Isi KTP
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+            <ion-label position="floating">Nama</ion-label>
+            <ion-input type="text" [(ngModel)]="nama"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">NIK</ion-label>
+            <ion-input type="text" [(ngModel)]="nik"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Tempat Lahir</ion-label>
+            <ion-input type="text" [(ngModel)]="tempatLahir"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="">Tanggal Lahir</ion-label>
+            <ion-input type="date" [(ngModel)]="tanggalLahir"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Alamat</ion-label>
+            <ion-textarea [(ngModel)]="alamat"></ion-textarea>
+        </ion-item>
+    </ion-list>
+
+    <ion-button expand="full" (click)="submitForm()">
+        Simpan
+    </ion-button>
+
+    <ion-button expand="full" (click)="submitView()">
+        Lihat data
+    </ion-button>
+</ion-content>
